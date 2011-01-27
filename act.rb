@@ -1,3 +1,7 @@
+require 'rubygems'
+require 'bundler'
+Bundler.require
+
 require 'sinatra'
 require 'sinatra/r18n'
 require 'haml'
