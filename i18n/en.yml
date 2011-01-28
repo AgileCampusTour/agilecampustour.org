@@ -1,1 +1,15 @@
-title: Agile Campus Tour EN
+title: Agile Campus Tour
+tagline: "We ain't no rockstars but we tour to rock your world."
+abstract: !!html
+  Several <em>sessions</em> to open <em>students</em>' brains to new and shiny <em>agile</em><a class="footnote" href="#agile-values">*</a> software development <em>methodologies</em>.
+agile_values:
+  value_1: !!html
+    <em><strong>Individuals</strong> and <strong>interactions</strong></em> over processes and tools
+  value_2: !!html
+    <em><strong>Working software</strong></em> over comprehensive documentation
+  value_3: !!html
+    <em>Customer <strong>collaboration</strong></em> over contract negotiation
+  value_4: !!html
+    <em>Responding to <strong>change</strong></em> over following a plan
+twitter: Twitter
+follow_us: Follow us

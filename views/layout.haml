@@ -1,7 +1,15 @@
+!!!
 %html
   %head
+    %meta(charset="UTF-8")
+    %meta(name="author" content="Julien Biezemans")
+    %title Agile Campus Tour
+    %link(rel="stylesheet" href="/stylesheets/main.css" media="screen")
     %script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js")
-    %script(type="text/javascript" src="javascripts/jquery.tweet.js")
+    %script(type="text/javascript" src="/javascripts/jquery.tweet.js")
+    %script(type="text/javascript" src="/javascripts/act.js")
+    /[if lte IE 8]
+      %script(type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js")
     - if production?
       :javascript
         var _gaq = _gaq || [];
@@ -14,4 +22,27 @@
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
   %body
-    = yield
+    %header
+      %hgroup
+        %h1= t.title
+        %h2(lang="en-US")= t.tagline
+      %p.abstract
+        = t.abstract
+      %ul.agile-values
+        %li= t.agile_values.value_1
+        %li= t.agile_values.value_2
+        %li= t.agile_values.value_3
+        %li= t.agile_values.value_4
+    .content
+      %nav
+        %ul
+          %li.active Evénement
+          %li Agenda
+          %li A propos
+          %li Presse
+      %article#event.active
+        = yield
+      %aside
+        %h1.twitter= t.twitter
+        .tweet
+        %a.follow_on_twitter(href="http://twitter.com/#!/agilecampustour")= t.follow_us
