@@ -1,6 +1,5 @@
 var AgileCampusTour = {
   init: function() {
-    console.log($('.tweet'));
     $(".tweet").tweet({
       username: "agilecampustour",
       avatar_size: 48,
