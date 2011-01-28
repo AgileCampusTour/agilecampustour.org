@@ -1,0 +1,28 @@
+# Ignore all backup files
+*~
+
+# Mac-specific files
+.DS_Store
+
+# Ignore Emacs auto saved files
+*#*#
+.#*
+.emacs*
+
+# Ignore Vim swap files
+*.swp
+
+# Ignore autotest (cucumber, rspec, ...) local configuration
+.autotest
+.idea
+
+# Merge files
+*.orig
+
+.bundle
+.rvmrc
+*.zip
+
+# Ignore rcov generated files
+coverage.data
+coverage*
