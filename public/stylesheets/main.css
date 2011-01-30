@@ -12,7 +12,7 @@ hgroup
   display:block;
   height:192px;
   background-color:#25455d;
-  background-image:url('../images/header-highlight.png');
+  background-image:url('/images/header-highlight.png');
   background-repeat:no-repeat;
   background-position:center top;
   -moz-box-shadow:inset 0 -4px 6px rgba(0,0,0,.35);
@@ -27,7 +27,7 @@ hgroup:after
   height:35px;
   width:100%;
   display:block;
-  background-image:url('../images/header-shadow.png');
+  background-image:url('/images/header-shadow.png');
   background-repeat:no-repeat;
   background-position:center -45px;
   margin:0;
@@ -35,7 +35,7 @@ hgroup:after
 
 header hgroup h1
 {
-  background-image:url('../images/act-header.png');
+  background-image:url('/images/act-header.png');
   background-repeat:no-repeat;
   background-position:center center;
   height:192px;
@@ -162,7 +162,7 @@ header li:last-child:after
   width:900px;
   height:20px;
   content:" ";
-  background-image:url('../images/content-frame.png');
+  background-image:url('/images/content-frame.png');
   padding:0;
   margin:0;
 }
@@ -185,7 +185,7 @@ header li:last-child:after
 .content nav ul li
 {
   display:inline-block;
-  background:url('../images/tab.png');
+  background:url('/images/tab.png');
   width:159px;
   height:80px;
   text-align:center;
@@ -206,7 +206,7 @@ header li:last-child:after
   color:#d5e5ff;
   width:162px;
   margin-right:-3px;
-  background:url('../images/active-tab.png');
+  background:url('/images/active-tab.png');
   text-shadow:1px 1px 1px rgba(0,0,0,.7), 0 0 15px rgba(255,255,255,.8);
 }
 
@@ -214,8 +214,8 @@ header li:last-child:after
 {
   display:none;
   float:left;
-  width:565px;
-  margin:0 15px 0 29px;
+  width:550px;
+  margin:0 0 0 29px;
 }
 
 .content article.active
@@ -227,7 +227,7 @@ header li:last-child:after
 {
   display:block;
   float:left;
-  width:245px;
+  width:275px;
   margin:0 29px 0 15px;
   text-align:center;  
 }
@@ -272,9 +272,25 @@ header li:last-child:after
 
 .content aside h1.twitter
 {
-  background-image:url('../images/twitter.png');
+  background-image:url('/images/twitter.png');
   background-repeat:no-repeat;
   background-position:center top;
   height:70px;
   text-indent:-10001px;
+}
+
+.content aside:before
+{
+  content:url('/images/aside-separator.png');
+  display:block;
+  float:left;
+  width:22px;
+  margin-right:-7px;
+}
+
+/* TODO */
+
+.tweet
+{
+  text-align:left;
 }
