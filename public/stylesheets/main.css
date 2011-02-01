@@ -2,7 +2,7 @@
   
 html
 {
-  font:.9em/1.5 "helvetica neue", helvetica, arial, "nimbus sans l", sans-serif;
+  font:1em/1.5 "helvetica neue", helvetica, arial, "nimbus sans l", sans-serif;
   color:#fff;
   background:#171f25;
 }
@@ -82,7 +82,7 @@ a
 header ul
 {
   color:#b3b3b3;
-  font:1.14em "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font:1em "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   display:block;
   width:705px;
   margin:35px auto;
@@ -199,6 +199,7 @@ header li:last-child:after
 .content nav a
 {
   color:inherit;
+  /* FIXME: outline:0; */
 }
 
 .content nav ul li.active
@@ -212,16 +213,48 @@ header li:last-child:after
 
 .content article
 {
-  display:none;
   float:left;
   width:550px;
   margin:0 0 0 29px;
+  color:#b7c5c8;
+  text-shadow:1px 2px 1px rgba(0,0,0,.8);
+  line-height:1.7em;
 }
 
-.content article.active
+.content article h1
 {
-  display:block;
+  color:white;
+  margin:1em 0;
+  font-size:1.35em;
+  font-weight:bold;
+  text-shadow:2px 3px 3px rgba(0,0,0,.75);
 }
+
+.content article p
+{
+  margin:1.2em 0;
+}
+
+.content article ul
+{
+  list-style-type:circle;
+}
+
+.content article ul li
+{
+  list-style:disc inside;
+}
+
+.content article ul li:after
+{
+  content:";";
+}
+
+.content article ul li:last-child:after
+{
+  content:".";
+}
+
 
 .content aside
 {

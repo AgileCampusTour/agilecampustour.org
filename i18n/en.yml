@@ -13,9 +13,9 @@ agile_values:
     <em>Responding to <strong>change</strong></em> over following a plan
 tabs:
   news: News
-  event: Event
-  calendar: Calendar
   about: About
+  calendar: Calendar
   press: Press
+  credits: Credits
 twitter: Twitter
 follow_us: Follow us

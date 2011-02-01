@@ -8,9 +8,9 @@ agile_values:
   value_4: <em>Réagir au <strong>changement</strong></em> plutôt que suivre un plan
 tabs:
   news: Nouvelles
-  event: Evénement
-  calendar: Agenda
   about: A propos
+  calendar: Calendrier
   press: Presse
+  credits: Crédits
 twitter: Twitter
 follow_us: Suivez-nous
