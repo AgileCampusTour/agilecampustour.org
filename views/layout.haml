@@ -36,10 +36,16 @@
     .content
       %nav
         %ul
-          %li.active Evénement
-          %li Agenda
-          %li A propos
-          %li Presse
+          %li(class="#{@page == 'news'     ? 'active' : 'inactive'}")
+            %a(href="/#{@locale}/news")= t.tabs.news
+          %li(class="#{@page == 'event'    ? 'active' : 'inactive'}")
+            %a(href="/#{@locale}/event")= t.tabs.event
+          %li(class="#{@page == 'calendar' ? 'active' : 'inactive'}")
+            %a(href="/#{@locale}/calendar")= t.tabs.calendar
+          %li(class="#{@page == 'about'    ? 'active' : 'inactive'}")
+            %a(href="/#{@locale}/about")= t.tabs.about
+          %li(class="#{@page == 'press'    ? 'active' : 'inactive'}")
+            %a(href="/#{@locale}/press")= t.tabs.press
       %article#event.active
         = yield
       %aside

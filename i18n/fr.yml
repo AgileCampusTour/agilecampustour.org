@@ -6,5 +6,11 @@ agile_values:
   value_2: <em><strong>Personnes</strong> et <strong>interaction</strong></em> plutôt que processus et outils
   value_3: <em><strong>Logiciel fonctionnel</strong></em> plutôt que documentation complète
   value_4: <em>Réagir au <strong>changement</strong></em> plutôt que suivre un plan
+tabs:
+  news: Nouvelles
+  event: Evénement
+  calendar: Agenda
+  about: A propos
+  press: Presse
 twitter: Twitter
 follow_us: Suivez-nous

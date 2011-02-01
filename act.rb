@@ -24,15 +24,17 @@ end
 before '/:locale/*' do |locale_code, remaining_path|
   if r18n.available_locales.map(&:code).include?(locale_code)
     r18n.locale = locale_code
+    @locale = locale_code
   else
     redirect "/#{determine_default_locale.code}/#{remaining_path}"
   end
 end
 
 get '/' do
-  redirect "/#{determine_default_locale.code}/event"
+  redirect "/#{determine_default_locale.code}/news"
 end
 
-get '/:locale/event' do |locale|
-  haml :"event.#{params[:locale]}"
+get '/:locale/:page' do |locale, page|
+  @page = page
+  haml :"#{page}.#{params[:locale]}"
 end
