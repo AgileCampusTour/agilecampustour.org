@@ -18,9 +18,9 @@ if ENV['RACK_ENV'] == 'staging'
 end
 
 get '/' do
-  haml :index
+  haml :"index.#{r18n.locale.code}"
 end
 
 get '/:locale' do
-  haml :index
+  haml :"index.#{params[:locale]}"
 end
