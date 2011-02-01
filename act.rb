@@ -17,10 +17,22 @@ if ENV['RACK_ENV'] == 'staging'
   end
 end
 
-get '/' do
-  haml :"index.#{r18n.locale.code}"
+def determine_default_locale
+  (r18n.locales & r18n.available_locales).first || r18n.default
 end
 
-get '/:locale' do
-  haml :"index.#{params[:locale]}"
+before '/:locale/*' do |locale_code, remaining_path|
+  if r18n.available_locales.map(&:code).include?(locale_code)
+    r18n.locale = locale_code
+  else
+    redirect "/#{determine_default_locale.code}/#{remaining_path}"
+  end
+end
+
+get '/' do
+  redirect "/#{determine_default_locale.code}/event"
+end
+
+get '/:locale/event' do |locale|
+  haml :"event.#{params[:locale]}"
 end
