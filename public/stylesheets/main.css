@@ -7,6 +7,13 @@ html
   background:#171f25;
 }
 
+
+a
+{
+  color:white;
+  text-decoration:none;
+}
+
 hgroup
 {
   display:block;
@@ -46,12 +53,6 @@ header hgroup h2
 {
   height:0;
   text-indent:-10001px;
-}
-
-a
-{
-  color:yellow;
-  text-decoration:none;
 }
 
 .abstract
@@ -214,8 +215,8 @@ header li:last-child:after
 .content article
 {
   float:left;
-  width:550px;
-  margin:0 0 0 29px;
+  width:520px;
+  margin:0 30px 0 29px;
   color:#b7c5c8;
   text-shadow:1px 2px 1px rgba(0,0,0,.8);
   line-height:1.7em;
@@ -262,7 +263,9 @@ header li:last-child:after
   float:left;
   width:275px;
   margin:0 29px 0 15px;
-  text-align:center;  
+  text-align:center;
+  font-size:.8em;
+  color:#748f95;
 }
 
 .content aside a.follow_on_twitter
@@ -316,9 +319,9 @@ header li:last-child:after
 {
   content:url('/images/aside-separator.png');
   display:block;
-  float:left;
+  position:absolute;
   width:22px;
-  margin-right:-7px;
+  margin-left:-23px;
 }
 
 /* TODO */
