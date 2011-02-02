@@ -1,5 +1,5 @@
 (function($) {
- 
+
   $.fn.tweet = function(o){
     var s = {
       username: ["seaofclouds"],                // [string]   required, unless you want to display our tweets. :) it can be an array, just do ["username1","username2","etc"]
@@ -21,9 +21,9 @@
       twitter_api_url: "api.twitter.com",       // [string]   custom twitter api url, if any (apigee, etc.)
       twitter_search_url: "search.twitter.com"  // [string]   custom twitter search url, if any (apigee, etc.)
     };
-    
+
     if(o) $.extend(s, o);
-    
+
     $.fn.extend({
       linkUrl: function() {
         var returning = [];
@@ -152,19 +152,20 @@
             } else {
               var join_text = s.join_text;
             };
-   
+
             var from_user = item.from_user || item.user.screen_name;
             var profile_image_url = item.profile_image_url || item.user.profile_image_url;
             var join_template = '<span class="tweet_join"> '+join_text+' </span>';
             var join = ((s.join_text) ? join_template : ' ');
             var avatar_template = '<a class="tweet_avatar" href="http://'+s.twitter_url+'/'+from_user+'"><img src="'+profile_image_url+'" height="'+s.avatar_size+'" width="'+s.avatar_size+'" alt="'+from_user+'\'s avatar" title="'+from_user+'\'s avatar" border="0"/></a>';
-            var avatar = (s.avatar_size ? avatar_template : '');
+            var user_name = '<a class="tweet_username" href="http://'+s.twitter_url+'/'+from_user+'" title="'+from_user+'\'s profile">@'+from_user+'</a>';
+            var avatar = (s.avatar_size ? avatar_template : user_name);
             var date = '<span class="tweet_time"><a href="http://'+s.twitter_url+'/'+from_user+'/statuses/'+item.id_str+'" title="view tweet on twitter">'+relative_time(item.created_at)+'</a></span>';
             var text = '<span class="tweet_text">' +$([item.text]).linkUrl().linkUser().linkHash().makeHeart().capAwesome().capEpic()[0]+ '</span>';
-   
+
             // until we create a template option, arrange the items below to alter a tweet's display.
-            list.append('<li>' + avatar + date + join + text + '</li>');
-   
+	    list.append('<li>' + text + join + avatar + ', ' + date + '</li>');
+
             list.children('li:first').addClass('tweet_first');
             list.children('li:odd').addClass('tweet_even');
             list.children('li:even').addClass('tweet_odd');

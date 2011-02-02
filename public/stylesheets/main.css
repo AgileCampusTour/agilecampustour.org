@@ -12,6 +12,7 @@ a
 {
   color:white;
   text-decoration:none;
+  font-weight:bold;
 }
 
 hgroup
@@ -265,7 +266,8 @@ header li:last-child:after
   margin:0 29px 0 15px;
   text-align:center;
   font-size:.8em;
-  color:#748f95;
+  color:#b8c6c9;
+  text-shadow:1px 1px 1px rgba(0,0,0,.6);
 }
 
 .content aside a.follow_on_twitter
@@ -326,7 +328,34 @@ header li:last-child:after
 
 /* TODO */
 
-.tweet
+.tweets
 {
   text-align:left;
+}
+
+.tweets li
+{
+  margin:1.5em 0;
+  word-wrap:break-word;
+}
+
+.tweets a
+{
+  color:#e4e9ea;
+}
+
+.tweets .tweet_time a, .tweets .tweet_username
+{
+  color:#748f95;
+  font-size:.9em;
+}
+
+.tweets .tweet_username
+{
+  font-weight:bold;
+}
+
+.tweets .tweet_text
+{
+  display:block;
 }
