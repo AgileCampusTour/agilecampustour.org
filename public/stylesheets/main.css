@@ -257,6 +257,11 @@ header li:last-child:after
   content:".";
 }
 
+.content article div.event
+{
+  margin-bottom: 0.6em;
+}
+
 
 .content aside
 {
