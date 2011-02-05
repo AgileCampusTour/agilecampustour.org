@@ -45,15 +45,24 @@ header hgroup h1
 {
   background-image:url('/images/act-header.png');
   background-repeat:no-repeat;
-  background-position:center center;
-  height:192px;
+  background-position:center bottom;
+  height:115px;
   text-indent:-10001px;
+}
+
+header hgroup h2, header ul
+{
+  font-family:"Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
 header hgroup h2
 {
-  height:0;
-  text-indent:-10001px;
+  height:77px;
+  text-align:center;
+  font-size:1.2em;
+  letter-spacing:2px;
+  color:#ddd;
+  text-shadow:1px 2px 1px rgba(0,0,0,.9);
 }
 
 .abstract
@@ -84,7 +93,6 @@ header hgroup h2
 header ul
 {
   color:#b3b3b3;
-  font:1em "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   display:block;
   width:705px;
   margin:35px auto;
