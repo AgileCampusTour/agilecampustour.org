@@ -231,6 +231,11 @@ header li:last-child:after
   line-height:1.7em;
 }
 
+.content article h1, .content article h2
+{
+  clear:both;
+}
+
 .content article h1
 {
   color:white;
@@ -244,7 +249,7 @@ header li:last-child:after
 {
   color:#f1d07a;
   font-weight:bolder;
-  margin-top:1em;
+  margin-top:2em;
   margin-bottom:1em;
   text-transform:uppercase;
 }
@@ -313,11 +318,11 @@ header li:last-child:after
   line-height:1em;
   color:#7f9094;
   background-color:#1d2630;
-  border:solid 1px #28313c;
   text-shadow:none;
   text-align:center;
   padding:.6em .3em .3em .3em;
   margin-right:.5em;
+  border:solid 1px #28313c;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   border-radius:5px;
@@ -374,6 +379,16 @@ header li:last-child:after
 .content article li .geo
 {
   display: none;
+}
+
+.content article .avatar
+{
+  float:left;
+  margin:0 .6em 0 0;
+  border:solid 1px #28313c;
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  border-radius:15px;
 }
 
 .content aside

@@ -3,7 +3,7 @@ var AgileCampusTour = {
     $(".tweets").tweet({
       username: "agilecampustour",
       count: 3,
-      query: "agile",
+      query: "agilecampustour",
       refresh_interval: 10,
       loading_text: "loading tweets..."
     });
