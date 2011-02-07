@@ -42,13 +42,11 @@
             %a(href="/#{@locale}/about")= t.tabs.about
           %li(class="#{@page == 'calendar' ? 'active' : 'inactive'}")
             %a(href="/#{@locale}/calendar")= t.tabs.calendar
-          /
-            %li(class="#{@page == 'press'    ? 'active' : 'inactive'}")
-              %a(href="/#{@locale}/press")= t.tabs.press
+          %li(class="#{@page == 'press'    ? 'active' : 'inactive'}")
+            %a(href="/#{@locale}/press")= t.tabs.press
           %li(class="#{@page == 'credits'    ? 'active' : 'inactive'}")
             %a(href="/#{@locale}/credits")= t.tabs.credits
-      %article
-        = yield
+      = yield
       %aside
         %h1.twitter= t.twitter
         .tweets
