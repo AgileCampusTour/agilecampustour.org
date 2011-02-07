@@ -1,58 +1,84 @@
-%h1= t.tabs.calendar
+%h1
+  = t.tabs.calendar
+  %a.subscribe_ical{:type => 'text/calendar', :href => "webcal://h2vx.com/ics/#{@host}/#{@locale}/calendar"} iCal
+
+%h2 Louvain-la-Neuve
 
 %ul
-  %li.event
-    %span.date  10/02 
-    %span.title Agile? C'est quoi ce truc?
-    %br
-    %span.city  Louvain-la-Neuve, UCL, BARB94
-    %span.time  13h00 - 14h00
-    %span.warning In French
+  %li.vevent.next
+    %abbr.dtstart{:title => '2011-02-10T13:00+01:00'}
+      %span.day 10
+      %span.month Feb
+    %span.row
+      %span.summary Agile? C'est quoi ce truc?
+      %abbr.dtend{:title => '2011-02-10T14:00+01:00'} 13h00 - 14h00
+    %span.row
+      %span.location Louvain-la-Neuve, UCL, BARB94
+      %span.description in French
 
-  %li.event
-    %span.date  17/02
-    %span.title Estimer & Planifier
-    %br
-    %span.city  Louvain-la-Neuve, UCL, BARB94
-    %span.time  13h00 - 14h00
-    %span.warning In French
+  %li.vevent
+    %abbr.dtstart{:title => '2011-02-17T13:00+01:00'}
+      %span.day 17
+      %span.month Feb
+    %span.row
+      %span.summary Estimer &amp; Planifier
+      %abbr.dtend{:title => '2011-02-17T14:00+01:00'} 13h00 - 14h00
+    %span.row
+      %span.location Louvain-la-Neuve, UCL, BARB94
+      %span.description in French
 
-  %li.event
-    %span.date  21/02
-    %span.title Planification Workshop
-    %br
-    %span.city  Louvain-la-Neuve, UCL, BARB94
-    %span.time  18h30 - 21h30
-    %span.warning In French
-  
-  %li.event
-    %span.date  24/02
-    %span.title Développer oui, mais pas n'importe comment
-    %br
-    %span.city  Louvain-la-Neuve, UCL, BARB94
-    %span.time  13h00 - 14h00
-    %span.warning In French
-  
-  %li.event
-    %span.date  28/02
-    %span.title Code workshop
-    %br
-    %span.city  Louvain-la-Neuve, UCL, BARB94
-    %span.time  18h30 - 21h30
-    %span.warning In French
-    
-  %li.event
-    %span.date  03/03
-    %span.title Retrospectives et conclusion
-    %br
-    %span.city  Louvain-la-Neuve, UCL, BARB94
-    %span.time  13h00 - 14h00
-    %span.warning In French
-    
-  %li.event
-    %span.date  16/03
-    %span.title L'agilité, une autre manière de développer des logiciels
-    %br
-    %span.city  Mons, UMONS
-    %span.warning In French
-    
+  %li.vevent
+    %abbr.dtstart{:title => '2011-02-21T18:30+01:00'}
+      %span.day 21
+      %span.month Feb
+    %span.row
+      %span.summary Planification Workshop
+      %abbr.dtend{:title => '2011-02-21T21:30+01:00'} 18h30 - 21h30
+    %span.row
+      %span.location Louvain-la-Neuve, UCL, BARB94
+      %span.description in French
+
+  %li.vevent
+    %abbr.dtstart{:title => '2011-02-24T13:00+01:00'}
+      %span.day 24
+      %span.month Feb
+    %span.row
+      %span.summary Développer oui, mais pas n'importe comment
+      %abbr.dtend{:title => '2011-02-24T14:00+01:00'} 13h00 - 14h00
+    %span.row
+      %span.location Louvain-la-Neuve, UCL, BARB94
+      %span.description in French
+
+  %li.vevent
+    %abbr.dtstart{:title => '2011-02-28T18:30+01:00'}
+      %span.day 28
+      %span.month Feb
+    %span.row
+      %span.summary Code workshop
+      %abbr.dtend{:title => '2011-02-28T21:30+01:00'} 18h30 - 21h30
+    %span.row
+      %span.location Louvain-la-Neuve, UCL, BARB94
+      %span.description in French
+
+  %li.vevent
+    %abbr.dtstart{:title => '2011-03-03T13:00+01:00'}
+      %span.day 03
+      %span.month Mar
+    %span.row
+      %span.summary Retrospectives et conclusion
+      %abbr.dtend{:title => '2011-03-03T14:00+01:00'} 13h00 - 14h00
+    %span.row
+      %span.location Louvain-la-Neuve, UCL, BARB94
+      %span.description in French
+
+%h2 Mons
+
+%ul
+  %li.vevent
+    %abbr.dtstart{:title => '2011-03-16'}
+      %span.day 16
+      %span.month Mar
+    %span.summary L'agilité, une autre manière de développer des logiciels
+    %span.location Mons, UMONS
+    %span.description in French
+

@@ -6,6 +6,7 @@ Bundler.require
 require 'sinatra'
 require 'sinatra/r18n'
 require 'haml'
+require 'cgi'
 
 set :haml, :format => :html5
 set :default_locale, 'en'
@@ -36,5 +37,6 @@ end
 
 get '/:locale/:page' do |locale, page|
   @page = page
+  @host = request.env['SERVER_PORT'] == '80' ? request.host : CGI.escape(request.host_with_port)
   haml :"#{page}.#{params[:locale]}"
 end
