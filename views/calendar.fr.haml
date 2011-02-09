@@ -1,5 +1,7 @@
 %article
-  %h1= t.tabs.calendar
+  %h1
+    = t.tabs.calendar
+    %a.subscribe_ical{:type => 'text/calendar', :href => "webcal://h2vx.com/ics/#{@host}/#{@locale}/calendar"} ajouter dans iCal
   
   %h2 Louvain-la-Neuve
   
