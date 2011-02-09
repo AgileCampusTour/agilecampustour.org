@@ -1,0 +1,20 @@
+title: Agile Campus Tour
+tagline: "We ain't no rockstars but we tour to rock your world."
+abstract:
+  Verschillende <em>sessies</em> om de geest van <em>studenten</em> te openen voor de <em>waardes</em><a class="footnote" href="#agile=values">*</a> en <em>principes</em> van <em>agile</em> software ontwikkeling.
+agile_values:
+  value_1:
+    <em><strong>Individuen</strong> en <strong>interactie</strong></em> boven processen en gereedschap
+  value_2:
+    <em><strong>Werkende software</strong></em> boven begrijpbare documentatie
+  value_3:
+    <em><strong>Samenwerking</strong> met de klant</em> boven contract onderhandelingen
+  value_4:
+    <em>Antwoorden op <strong>veranderingen</strong></em> boven het volgen van het plan
+tabs:
+  news: Nieuws
+  about: Over
+  calendar: Kalender
+  credits: Team
+twitter: Twitter
+follow_us: Volg ons
