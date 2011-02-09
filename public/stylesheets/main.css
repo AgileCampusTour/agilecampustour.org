@@ -7,7 +7,6 @@ html
   background:#171f25;
 }
 
-
 a
 {
   color:#f1d07a;
@@ -220,7 +219,7 @@ header li:last-child:after
   text-shadow:1px 1px 1px rgba(0,0,0,.7), 0 0 15px rgba(255,255,255,.8);
 }
 
-.content section
+.content .main
 {
   float:left;
   width:520px;
