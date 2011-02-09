@@ -45,8 +45,8 @@
           /
             %li(class="#{@page == 'press'    ? 'active' : 'inactive'}")
               %a(href="/#{@locale}/press")= t.tabs.press
-          %li(class="#{@page == 'credits'    ? 'active' : 'inactive'}")
-            %a(href="/#{@locale}/credits")= t.tabs.credits
+          %li(class="#{@page == 'team'    ? 'active' : 'inactive'}")
+            %a(href="/#{@locale}/team")= t.tabs.team
       %section.main
         = yield
       %aside
