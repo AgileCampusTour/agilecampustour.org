@@ -46,7 +46,8 @@
             %a(href="/#{@locale}/press")= t.tabs.press
           %li(class="#{@page == 'credits'    ? 'active' : 'inactive'}")
             %a(href="/#{@locale}/credits")= t.tabs.credits
-      = yield
+      %section
+        = yield
       %aside
         %h1.twitter= t.twitter
         .tweets
