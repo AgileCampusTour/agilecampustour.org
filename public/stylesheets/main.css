@@ -207,16 +207,25 @@ header li:last-child:after
 .content nav a
 {
   color:inherit;
-  /* FIXME: outline:0; */
+  outline:0;
 }
 
-.content nav ul li.active
+.content nav a:focus, .content nav li.active a
+{
+  text-shadow:1px 1px 1px rgba(0,0,0,.7), 0 0 15px rgba(255,255,255,.8);
+}
+
+.content nav a:focus
+{
+  color:white;
+}
+
+.content nav li.active
 {
   color:#d5e5ff;
   width:162px;
   margin-right:-3px;
   background:url('/images/active-tab.png');
-  text-shadow:1px 1px 1px rgba(0,0,0,.7), 0 0 15px rgba(255,255,255,.8);
 }
 
 .content .main
@@ -471,8 +480,6 @@ header li:last-child:after
   width:22px;
   margin-left:-23px;
 }
-
-/* TODO */
 
 .tweets
 {
