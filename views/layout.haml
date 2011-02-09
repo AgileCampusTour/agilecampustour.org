@@ -53,3 +53,16 @@
         %h1.twitter= t.twitter
         .tweets
         %a.follow_on_twitter(href="http://twitter.com/#!/agilecampustour")= t.follow_us
+      %section.languages
+        %ul
+          - unless @locale == 'en'
+            %li
+              %a{:href => "/en/#{@page}"} English
+          - unless @locale == 'fr'
+            %li
+              %a{:href => "/fr/#{@page}"} français
+          - unless @locale == 'nl'
+            %li
+              %a{:href => "/nl/#{@page}"} Nederlands
+    %footer
+      %p &copy; AgileCampusTour 2011

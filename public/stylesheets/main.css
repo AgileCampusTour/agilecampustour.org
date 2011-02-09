@@ -496,3 +496,40 @@ header li:last-child:after
 {
   display:block;
 }
+
+section.languages ul
+{
+  font-size:.8em;
+  clear:both;
+  display:block;
+  padding-top:3em;
+  margin:0 auto -1em auto;
+  text-align:center;
+  opacity:.5;
+  -webkit-transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+}
+
+section.languages ul:hover
+{
+  opacity:1;
+}
+
+section.languages li
+{
+  display:inline-block;
+  margin:0 .25em 1em .25em;
+}
+
+footer
+{
+  display:block;
+  width:900px;
+  font-size:.8em;
+  color:#668086;
+  margin:-1em auto 2em auto;
+  text-align:center;
+}
