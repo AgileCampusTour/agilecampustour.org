@@ -430,7 +430,7 @@ header li:last-child:after
   height:34px;
   background:rgba(255,255,255,.02);
   text-align:center;
-  margin:1em 0;
+  margin:20px 0 0 0;
   padding:6px 0 0 0;
   font-size:18px;
   font-weight:bold;
@@ -457,7 +457,7 @@ header li:last-child:after
 
 .content aside a.follow_on_twitter:active
 {
-  margin:2px -1px -2px 1px;
+  margin:22px -1px -2px 1px;
   -webkit-box-shadow:1px 2px 3px rgba(0,0,0,.5), inset 0 0 15px rgba(255,255,255,.05);
   -moz-box-shadow:1px 2px 3px rgba(0,0,0,.5), inset 0 0 15px rgba(255,255,255,.05);
   box-shadow:1px 2px 3px rgba(0,0,0,.5), inset 0 0 15px rgba(255,255,255,.05);
