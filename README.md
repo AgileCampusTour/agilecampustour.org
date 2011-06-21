@@ -4,7 +4,7 @@ This is the source code of the Sinatra app behind agilecampustour.org
 
 ## Prerequisites
 
-* Ruby 1.9.2
+* Ruby 1.9.2-p0
 * Bundler 1.0.7
 * RVM (optional)
 
@@ -22,7 +22,7 @@ If you use RVM, you might want a .rvmrc file:
 Install gems:
 
     $ gem install bundler
-    $ bundle install
+    $ bundle
 
 Run the app:
 
